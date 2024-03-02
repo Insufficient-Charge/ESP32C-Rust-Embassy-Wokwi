@@ -4,8 +4,13 @@
 - InsufficientCharge (MyMy)
 - Other awesome devs that will add their usernames in the future
 
+## Disclaimer
+Finding information about ESP32 Embassy development on Rust often has you pooling through Github repos, which is why I made this public. However, note that I am simply an individual developer.
+
 ## Current functionality
 Follows Apollolabsdev's implementation of GPIO, but modified to activate a singular LED, blinking it on and off while maintaining a count between tasks.
+1. Spins up a task for turning on an LED, waiting one second, and then turning off an LED. Main releases async control every 5 seconds.
+2. Viewable within diagram.json (if you have the VS Code extension for Wokwi) is an ESP32 simulation, connected to an LED and a resistor, where if you run the simulation, should show the functionality in step (1).
 
 ## Age
 Throughout this project, I've found that how old a project is changes what you're capable of implementing with ESP32 Embassy. This repo was developed originally on March 2nd, 2024. Watch the age of the commits; if they're older than 2 years, you may have better luck searching for other Embassy ESP32 WokWi examples.
